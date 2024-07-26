@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="web.css">
+    <style>
+        img {
+            width: 50px;
+            height: 50px; 
+            margin: 30px; 
+            margin-right: 20px;
+            transition-property: width;
+            transition-duration: 0.5s;
+        }
+        img:hover {
+            width: 60px;
+            height: 60px;
+        }
+        p {
+            position: relative;
+            animation-name: slide;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes slide {
+            from{left: 200px;}
+            to{left: -200px;}
+        }
+    </style>
+</head>
+<body style="background-image: url(https://e0.pxfuel.com/wallpapers/138/150/desktop-wallpaper-big-website-background-big-website-epidemic.jpg); background-repeat: no-repeat; background-size: cover;">
+    <div class="main">
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="Resume_New.pdf" target="_blank">RESUME</a></li>
+                <li><a href="achievement.html">LAURELS</a></li>
+            </ul>
+        </nav>
+
+        <center>
+            <div class="intro">
+                <p style="font-size: 25px; font-family:monospace; padding-top: 80px; font-weight:lighter; color: whitesmoke;">Hello, I'm</p>
+                <p class="name">GUHAN</p>
+                <p style="font-size: 15px; font-family:monospace;margin-top: -30px; font-weight:lighter; color: whitesmoke;">WEB DEVELOPER</p>
+                <a href="https://github.com/Guhan-12"><img src="data:image/png;base64,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"></a>
+                <a href="https://www.linkedin.com/in/a-guhan/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAllBMVEUMZMX///8AYcQAWcFDf8nL3PIAWrzQ3vMAYcI0eclZjtAucslAgsz6/v3x9/sgbclOhM8AX8QAYsAAX70AV70AWMLm7vgAXb4sdsw5fsoRbsVmltK6z+iUt+AMZcGDrN3c6fNvnddiltWqwuPA0+r0+vyOrt+lweR9pduuyueUst9Lh81pldd1mtYdbcunxOXO4u7Z4fGRyVlRAAAEKUlEQVR4nO3ce1faMBzG8SblEpSCiUUuQrkMhsCc+v7f3Ko4KjW/yLY0WXOez9mf4Ml3vSW1NYoAAAAAAAAAAAAAAAAAAAAAAAAAAADgYiriIsqU72FURcapGnXHk5aMue+xVCCT6n56x960Z2OpMt8jsozz+Xve0Xqc+h6SXbKzYOeSfex7UBap+J591lThHI3awPxw5KGcVFUj0RayaRrI6UaUj8GTpfA9NivknApkvTC2YdwjC9lc+h6dBWpFB7JFCIXx1FDIRr6HZ0Fq2EkZewjgXNMnLhVH34a+x/fPeMdYOK3/gchvTIFsXf/ZKR+bC+u/DcW1cS/d1f84jFobU+H3ANYXadNU2PU9PAvkd0Ngz/forMgMhU/1P5Xm4h0ZmHQCOAzz68WEPNdsg9iE+ZH4QATeBTApPYqf9PvoKIh99E2qOxQ3jVvf47JHDT5fMl5GAQW+3tNvnF/4N3shwrhJc8Ljw/Q0Q13MJ4GcRc8IORjP99vZfpWlQe2gH3EZx7Gs/4IJAADqQ3DJX/+FM38vqHyKlA5Hhx+Pj49X43468P34CheEiz9Z+pTMlrvFaQ6YbNrblRpKf6vNbHRNKX2yT/kwSVd5XluzGGs//Ew9NfIGS/RYs3X2yUGzp7dpnMYu+zPql1mbp46f+XxeSCkVxrpt8+bmWJgJOTPeYP7m5QkWi4Wye0d94t3m3sNmtFao5OyLvle7zPnRaKlQCb6+IDBfXvddJ1oq5BH5WE7JXd/xwWilUKnJpYGM9a7dPk5mpfCWP18cmO+okdOtaKVwYHxm5ZP1wOWNPBuFneUfBTK2dHkzyEbhwfirco3NxOF+aqPw8rPMbzuHV34bhX+h4e6q6KnQ4ZM6ngrZyNlG9FXo7hfMvgp7zt7o8FXIDq52U2+FznbTKgovmgAsalq4mB0mQqjJYfvler98o6sWhevuYPh2C5jz4WD1ReMPR4soi4W91dmtXy7MK469o7mpvcLn8nRaSWPi9PzH/++FCXvW3LuXpoXxi6MllK1tqHtGLBMd0zccLYNtFR60W8T0wkqv7yTQVuGTfpfLuvRXkms3sxo7hQlx/yy7NayOO3Uq3MXExY148PFY6OZyYafwihqsXNJfGteoMCGXQoYfzxo1KmxSO2kkJvTLcXUq3BreraFnp3UqNLwT3aJPpnUqPNBjTV+CKDScFVv0t+pUaLiytegXq1BoCQoLKNRDYfVQWEChHgqrh8ICCvVQWD0UFlCoh8LqobCAQj0UVg+FBRTqobB6KCygUA+F1UNhAYV6KKweCgso1ENh9VBYQKEeCquHwkKAhe1SIf2UoaFwSP+/dB29FtTvUsbnH+Q3VxTDmxOq+zffskqJiOtFpZda+OV/M6uQKepLof0NWAAAAAAAAAAAAAAAAAAAAAAAAAAAgAr8Aj5RWY0PDbn2AAAAAElFTkSuQmCC"></a>
+                <a href="https://mail.google.com/mail/u/0/?ogbl#inbox"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROXYaAcLmskWIZhMensHCbYSYChRgMvhlSUw&usqp=CAU" ></a>
+            </div>
+        </center>
+    </div>
+</body>
+</html>
